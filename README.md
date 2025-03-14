@@ -5,7 +5,7 @@ A self-engaging chatbot application where two AI bots, **Mark** and **Max**, con
 ## How to Run the Project
 
 # Step 1: Clone the repository
-git clone https://github.com/your-username/self-chatbot-infas.git
+git clone https://github.com/infas03/ai-chatbot-infas.git
 cd self-chatbot-infas
 
 # Step 2: Install dependencies
