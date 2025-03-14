@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Self Chat-bot Infas
 
-## Getting Started
+A self-engaging chatbot application where two AI bots, **Mark** and **Max**, converse with each other based on an initial user prompt. The conversation is displayed in real-time with smooth auto-scrolling and optimized performance.
 
-First, run the development server:
+## How to Run the Project
 
-```bash
+# Step 1: Clone the repository
+git clone https://github.com/your-username/self-chatbot-infas.git
+cd self-chatbot-infas
+
+# Step 2: Install dependencies
+npm install
+
+# Step 3: Set up environment variables
+echo "GOOGLE_GEN_AI_API_KEY=your-api-key-here" > .env
+
+# Step 4: Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. **Two AI Bots**:
+   - **Mark** and **Max** engage in a conversation based on the user's initial prompt.
+   - The bots take turns responding to each other for a total of 10 messages (5 exchanges).
 
-## Learn More
+2. **Real-Time Updates**:
+   - The chat updates in real-time as the bots respond, providing a seamless user experience.
 
-To learn more about Next.js, take a look at the following resources:
+3. **Smooth Auto-Scrolling**:
+   - The chat automatically scrolls down smoothly when new messages are added, ensuring the latest messages are always visible.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. **Optimized Performance**:
+   - The app is structured and optimized for performance using React best practices, including:
+     - Code splitting.
+     - Memoization with `React.memo`, `useCallback`, and `useMemo`.
+     - Proper error handling for API calls.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+5. **Loading State**:
+   - A spinner is displayed in the "START" button while the conversation is being generated.
+   - A message is shown to inform the user to wait until the conversation is complete.
 
-## Deploy on Vercel
+## Technologies Used
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend**:
+  - **Next.js**: React framework for server-rendered applications.
+  - **Tailwind CSS**: Utility-first CSS framework for styling.
+  - **React Markdown**: Library for rendering Markdown in React.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Backend**:
+  - **Google Generative AI API**: Used to generate responses for the bots (`gemini-2.0-flash` model).
+
+- **Other Tools**:
+  - **TypeScript**: For type-safe development.
+  - **React Hooks**: `useState`, `useEffect`, `useCallback`, and `useMemo` for state and performance management.
+  - **ESLint**: For code linting and maintaining code quality.
+
+
